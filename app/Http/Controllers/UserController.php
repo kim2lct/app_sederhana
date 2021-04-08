@@ -23,7 +23,7 @@ class UserController extends Controller
 
    // FOR API
    public function view($id){
-   	 $user = User::find($id);
+   	 $user = User::find($id)->with('meta')->get();
    	 if($user){
    	 	return response()->json([
    	 		'data'=>$user,
@@ -37,7 +37,7 @@ class UserController extends Controller
    }
 
    public function all(){   	
-   	return User::orderByDesc('id')->get();
+   	return User::orderByDesc('id')->with('meta')->get();
    }
 
    public function register(Request $request){ 
