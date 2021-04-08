@@ -1,0 +1,57 @@
+$primary:#e52546;
+$secondary:#0dce40;
+$hover:#2e1d54;
+
+@import '~bootstrap/scss/bootstrap';
+
+.auth_wrapper {    
+    max-width: 800px;
+    margin: 35px auto;
+    .auth_box.register form .row{
+    	box-shadow: none!important;
+    }
+    .auth_box.login form .row {
+    	box-shadow: 2px 2px 16px #00000052;
+    	min-height: 450px;
+	}
+    .bg-form {
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: #ffffff6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;    	
+	}
+	._form {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;    
+    justify-content: center;
+    height: 100%;
+}
+}
+
+ul.list-error {
+    padding: 0;
+    color: red;
+    list-style: none;
+}
+
+form {
+    width: 100%;
+}
+
+a.btn.btn-logout {
+    background: #a2a2a2;
+    color: #fff;
+    &:hover{
+    	background: #5d5d5d;
+    }
+}
+
+.form_container{
+	margin-bottom: 20px;
+}
